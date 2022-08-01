@@ -2,7 +2,7 @@
 
 ## _API интернет-сервиса YaMDB для хранения рецензий на произведения_
 
-https://github.com/moofup/yamdb_final/actions/workflows/yamdb_workflow/badge.svg
+![workflow](https://github.com/moofup/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
 
 ### Описание проекта API YaMDB
 
