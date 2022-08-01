@@ -1,9 +1,9 @@
+from django.shortcuts import get_object_or_404
 from django_filters import rest_framework as rf_filters
 from rest_framework import filters, generics, viewsets
-from django.shortcuts import get_object_or_404
-
 from reviews.models import Comment, Review
 from titles.models import Category, Genre, Title
+
 from .mixins import ReviewCommentMixin
 from .permissions import IsAdminUserOrReadOnly
 from .serializers import (
