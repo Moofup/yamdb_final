@@ -9,7 +9,7 @@ from .permissions import IsAdminUserOrReadOnly
 from .serializers import (
     CategorySerializer, CommentSerializer,
     GenreSerializer, ReviewSerializer,
-    TitleSerializer, TitleListAndRetrieveSerializer
+    TitleListAndRetrieveSerializer, TitleSerializer
 )
 
 
@@ -17,8 +17,9 @@ class ReviewViewSet(ReviewCommentMixin):
     serializer_class = ReviewSerializer
 
     def get_queryset(self):
-        queryset = Review.objects.filter(title__id=self.kwargs.get('title_id'))
-        return queryset
+        return Review.objects.filter(
+            title__id=self.kwargs.get('title_id')
+        )
 
     def perform_create(self, serializer):
         title = get_object_or_404(Title, pk=self.kwargs.get('title_id'))
@@ -29,10 +30,9 @@ class CommentViewSet(ReviewCommentMixin):
     serializer_class = CommentSerializer
 
     def get_queryset(self):
-        queryset = Comment.objects.filter(
+        return Comment.objects.filter(
             review__id=self.kwargs.get('review_id')
         )
-        return queryset
 
     def perform_create(self, serializer):
         title_id = self.kwargs.get('title_id')
