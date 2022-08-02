@@ -43,7 +43,7 @@ jobs:
         with:
           push: true
           tags: moofup/yamdb_final:latest
-          file: api_yamdb/Dockerfile
+          file: ./api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
