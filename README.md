@@ -91,7 +91,7 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
 
 ### Остановка контейнеров
 
-Открыть второй терминал и воспользоваться командой
+Воспользоваться командой
 ```
 docker-compose stop 
 ```
