@@ -4,6 +4,9 @@
 
 ![Yamdb finally](https://github.com/moofup/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+IP-адрес сервера: 158.160.5.80
+
+
 ### Описание проекта API YaMDB
 
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Title). 
