@@ -4,7 +4,7 @@
 
 ![Yamdb finally](https://github.com/moofup/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-IP-адрес сервера: 158.160.5.80
+IP-адрес сервера: [http://158.160.5.80/redoc/](http://158.160.5.80/redoc/)
 
 
 ### Описание проекта API YaMDB
